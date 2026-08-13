@@ -1,0 +1,6 @@
+﻿entryNumber,shipmentTitle,importerOfRecord,brokerFiler,carrier,portOfEntry,exportDate,importDate,itemNumber,partNameKo,partNameEn,declaredHtsCode,declaredValueUsd,quantity,dutyRateDeclared
+KD-2026-0813,KD 미국향 8월 3차 선적분,Glovis America Inc.,Pacific Customs Brokers LLC,HMM,"Savannah, GA (1703)",2026-08-10,2026-08-25,LINE-001,전방 펜더 프레스 성형품,Front Fender Stamping,8708.29.51.10,420000,3500,2.5
+KD-2026-0813,KD 미국향 8월 3차 선적분,Glovis America Inc.,Pacific Customs Brokers LLC,HMM,"Savannah, GA (1703)",2026-08-10,2026-08-25,LINE-002,자동변속기 모듈,Automatic Transmission Module,8708.40.11.10,240000,260,2.5
+KD-2026-0813,KD 미국향 8월 3차 선적분,Glovis America Inc.,Pacific Customs Brokers LLC,HMM,"Savannah, GA (1703)",2026-08-10,2026-08-25,LINE-003,고전압 와이어링 하네스,High Voltage Wiring Harness,8544.30.00.00,320000,1500,2.5
+KD-2026-0813,KD 미국향 8월 3차 선적분,Glovis America Inc.,Pacific Customs Brokers LLC,HMM,"Savannah, GA (1703)",2026-08-10,2026-08-25,LINE-004,전방 LED 헤드램프,Front LED Headlamp,8512.20.20.40,350000,2000,0
+KD-2026-0813,KD 미국향 8월 3차 선적분,Glovis America Inc.,Pacific Customs Brokers LLC,HMM,"Savannah, GA (1703)",2026-08-10,2026-08-25,LINE-005,철강 고정 브래킷,Steel Fastener Bracket,7326.90.86.88,100000,5000,2.5
