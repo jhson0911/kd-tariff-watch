@@ -810,6 +810,9 @@ def page_analysis() -> None:
 
 def page_impact() -> None:
     hero("관세 영향 시각화", "신고 관세와 검토 후 관세를 비교해 우선 검토 대상을 찾습니다.")
+    if not st.session_state.shipments:
+        empty_state("분석할 신고서가 없습니다.")
+        return
     rows = []
     for shipment in st.session_state.shipments:
         total = shipment_totals(shipment)
