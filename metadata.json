@@ -1,0 +1,6 @@
+{
+  "name": "미국 KD 수출품목 사전확인 플랫폼",
+  "description": "미국 KD 수출품목 사전확인, HTS 코드 검증, 통관 신고서 관리 및 AI Copilot 관세 영향 분석 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

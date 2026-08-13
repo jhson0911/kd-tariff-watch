@@ -1,0 +1,261 @@
+{
+  "generatedAt": "2026-08-13T03:35:13.531216+00:00",
+  "dataset": {
+    "previousVersion": "HTS 2025 Revision 31",
+    "currentVersion": "HTS 2025 Revision 32",
+    "previousRowCount": 30105,
+    "currentRowCount": 30115,
+    "changeCount": 15,
+    "comparisonBasis": "HTS Number가 있는 행을 기준으로 Revision 31과 32의 전체 필드를 비교"
+  },
+  "sources": [
+    {
+      "id": "federal-register-2025-21940",
+      "nameKo": "미국 연방 관보 한미 관세 조치 공지",
+      "publisher": "Federal Register / USTR / U.S. Department of Commerce",
+      "url": "https://www.federalregister.gov/documents/2025/12/04/2025-21940/implementing-certain-tariff-related-elements-of-the-us-korea-strategic-trade-and-investment-deal",
+      "localFile": "03_데이터/01_공식공지/2025-21940_한미_관세협정_메타데이터.json",
+      "purpose": "공지 제목, 시행일, 적용 대상과 공식 원문 제공",
+      "language": "영어 원문 / 한국어 요약"
+    },
+    {
+      "id": "usitc-hts-rev31",
+      "nameKo": "미국 관세율표 2025 Revision 31",
+      "publisher": "U.S. International Trade Commission",
+      "url": "https://www.usitc.gov/2025_hts_revision_31",
+      "localFile": "03_데이터/02_HTS_판본/hts_2025_revision_31.csv",
+      "purpose": "한미 관세 조치 반영 전 기준 판본",
+      "language": "영어 원문"
+    },
+    {
+      "id": "usitc-hts-rev32",
+      "nameKo": "미국 관세율표 2025 Revision 32",
+      "publisher": "U.S. International Trade Commission",
+      "url": "https://www.usitc.gov/2025_hts_revision_32",
+      "localFile": "03_데이터/02_HTS_판본/hts_2025_revision_32.csv",
+      "purpose": "한미 관세 조치 반영 후 판본과 변경 항목 제공",
+      "language": "영어 원문"
+    },
+    {
+      "id": "cbp-csms-66987366",
+      "nameKo": "미국 세관 한미 관세 이행 안내",
+      "publisher": "U.S. Customs and Border Protection",
+      "url": "https://content.govdelivery.com/bulletins/gd/USDHSCBP-3fe2566",
+      "localFile": "03_데이터/03_통관업무_참고/CBP_CSMS_66987366_한미관세_이행지침.html",
+      "purpose": "미국 세관 신고 시 적용 코드와 처리 유의사항 확인",
+      "language": "영어 원문"
+    }
+  ],
+  "notices": [
+    {
+      "id": "2025-21940",
+      "titleKo": "한미 전략적 무역·투자 합의의 관세 조치 시행 공지",
+      "titleEn": "Implementing Certain Tariff-Related Elements of the U.S.-Korea Strategic Trade and Investment Deal",
+      "category": "Federal Register",
+      "summaryKo": "한국산 자동차·자동차 부품은 2025년 11월 1일 이후, 그 밖의 상호관세 대상 품목 등은 2025년 11월 14일 이후의 수입 건부터 변경 내용이 적용됩니다. 실제 적용 여부는 품목번호, 원산지와 수입 시점을 함께 확인해야 합니다.",
+      "contentEn": "On November 13, 2025, the United States and the Republic of Korea (ROK) issued a Joint Fact Sheet reaffirming the historic announcement in July of the Korea Strategic Trade and Investment Deal (U.S.-ROK Deal), which reflects the strength and endurance of the U.S.- ROK Alliance. The Joint Fact Sheet sets out steps the United States and the ROK will take to further the U.S.-ROK Alliance under the U.S.-ROK Deal. The Secretary of Commerce and United States Trade Representative, in consultation with the Commissioner of U.S. Customs and Border Protection and the Chair of the United States International Trade Commission, have determined that certain tariff modifications are necessary to implement that deal. This notice amends the Harmonized Tariff Schedule of the United States to implement certain tariff elements of that deal, adjusting tariffs on certain articles that are products of the ROK, including the country-specific reciprocal tariffs provided for under Executive Order 14257, as amended; tariffs on automobiles and automobile parts provided for under Proclamation 10908, as amended; tariffs on timber, lumber, and their derivatives provided for under Proclamation 10976; and tariffs on certain aircraft and aircraft parts provided for under Executive Order 14257, as amended, Proclamation 9704, as amended, Proclamation 9705, as amended, and Proclamation 10962.",
+      "effectiveDate": "2025-12-04",
+      "publicationDate": "2025-12-04",
+      "documentNumber": "2025-21940",
+      "citation": "90 FR 55964",
+      "federalRegisterUrl": "https://www.federalregister.gov/documents/2025/12/04/2025-21940/implementing-certain-tariff-related-elements-of-the-us-korea-strategic-trade-and-investment-deal",
+      "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2025-12-04/pdf/2025-21940.pdf",
+      "impactLevel": "high",
+      "isImportant": true,
+      "createdAt": "2025-12-04",
+      "sourceFile": "03_데이터/01_공식공지/2025-21940_한미_관세협정_메타데이터.json"
+    }
+  ],
+  "htsChanges": [
+    {
+      "htsCode": "9903.01.25",
+      "changeType": "내용 변경",
+      "descriptionEn": "Articles the product of any country, except for products described in headings 9903.01.26–9903.01.33, 9903.02.02–9903.02.81, 9903.96.01, and 9903.96.02, and except as provided for in headings 9903.01.34 and 9903.02.01, as provided for in subdivision (v) of U.S. note 2 to this subchapter",
+      "generalRateBefore": "The duty provided in the applicable subheading + 10%",
+      "generalRateAfter": "The duty provided in the applicable subheading + 10%",
+      "specialRateBefore": "The duty provided in the applicable subheading + 10%",
+      "specialRateAfter": "The duty provided in the applicable subheading + 10%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": [
+        "Description"
+      ]
+    },
+    {
+      "htsCode": "9903.02.56",
+      "changeType": "내용 변경",
+      "descriptionEn": "Except for goods loaded onto a vessel at the port of loading and in transit on the final mode of transit before 12:01 a.m. eastern daylight time on August 7, 2025, and entered for consumption or withdrawn from warehouse for consumption before 12:01 a.m. eastern daylight time on October 5, 2025, except for products described in headings 9903.01.30-9903.01.33 and 9903.02.78, and except as provided for in headings 9903.01.34 and 9903.02.01, articles the product of South Korea, as provided for in subdivision (v) of U.S. note 2 to this subchapter [Compiler's note: This provision was terminated on November 14, 2025. See 90 Fed. Reg. 55964]",
+      "generalRateBefore": "The duty provided in the applicable subheading + 15%",
+      "generalRateAfter": "The duty provided in the applicable subheading + 15%",
+      "specialRateBefore": "The duty provided in the applicable subheading + 15%",
+      "specialRateAfter": "The duty provided in the applicable subheading + 15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": [
+        "Description"
+      ]
+    },
+    {
+      "htsCode": "9903.02.79",
+      "changeType": "추가",
+      "descriptionEn": "Except for products described in headings 9903.01.30–9903.01.33, 9903.02.78, and 9903.02.81, and except as provided for in headings 9903.01.34, 9903.02.01, articles the product of South Korea, with an ad valorem (or ad valorem equivalent) rate of duty under column 1-General or column 1-Special equal to or greater than 15 percent, as provided for in subdivision (v)(xxiii)(a) of U.S. note 2 to this subchapter.",
+      "generalRateBefore": "",
+      "generalRateAfter": "The duty provided in the applicable subheading",
+      "specialRateBefore": "",
+      "specialRateAfter": "The duty provided in the applicable subheading",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.02.80",
+      "changeType": "추가",
+      "descriptionEn": "Except for products described in headings 9903.01.30–9903.01.33, 9903.02.78, and 9903.02.81, and except as provided for in headings 9903.01.34, 9903.02.01, articles the product of South Korea, with an ad valorem (or ad valorem equivalent) rate of duty under column 1-General or column 1-Special less than 15 percent, as provided for in subdivision (v)(xxiii)(a) of U.S. note 2 to this subchapter.",
+      "generalRateBefore": "",
+      "generalRateAfter": "15%",
+      "specialRateBefore": "",
+      "specialRateAfter": "15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.02.81",
+      "changeType": "추가",
+      "descriptionEn": "Articles of civil aircraft (all aircraft other than military aircraft); their engines, parts, and components; their other parts, components, and subassemblies; and ground flight simulators and their parts and components of South Korea, excluding unmanned aircraft, provided for in subdivision (v)(xxiii)(b) of U.S. note 2 to this subchapter",
+      "generalRateBefore": "",
+      "generalRateAfter": "The duty provided in the applicable subheading",
+      "specialRateBefore": "",
+      "specialRateAfter": "The duty provided in the applicable subheading",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.76.23",
+      "changeType": "추가",
+      "descriptionEn": "Wood products of South Korea as provided for in subdivisions (d) and (f) of U.S. note 37 of this subchapter",
+      "generalRateBefore": "",
+      "generalRateAfter": "15%",
+      "specialRateBefore": "",
+      "specialRateAfter": "15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.01",
+      "changeType": "내용 변경",
+      "descriptionEn": "Except for products described in headings 9903.94.02, 9903.94.03, 9903.94.04, 9903.94.31, 9903.94.40, 9903.94.41, 9903.94.50, 9903.94.51, 9903.94.60, and 9903.94.61, passenger vehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo vans) and light trucks, as specified in note 33 to this subchapter, as provided for in subdivision (b) of U.S. note 33 to this subchapter",
+      "generalRateBefore": "The duty provided in the applicable subheading + 25%",
+      "generalRateAfter": "The duty provided in the applicable subheading + 25%",
+      "specialRateBefore": "The duty provided in the applicable subheading + 25%",
+      "specialRateAfter": "The duty provided in the applicable subheading + 25%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": [
+        "Description"
+      ]
+    },
+    {
+      "htsCode": "9903.94.05",
+      "changeType": "내용 변경",
+      "descriptionEn": "Except for products described in headings 9903.94.06, 9903.94.32, 9903.94.33, 9903.94.42, 9903.94.43, 9903.94.44, 9903.94.45, 9903.94.52, 9903.94.53, 9903.94.54, 9903.94.55, 9903.94.62, and 9903.94.63, automobile parts, as provided for in subdivision (g) of U.S. note 33 to this subchapter",
+      "generalRateBefore": "The duty provided in the applicable subheading + 25%",
+      "generalRateAfter": "The duty provided in the applicable subheading + 25%",
+      "specialRateBefore": "The duty provided in the applicable subheading + 25%",
+      "specialRateAfter": "The duty provided in the applicable subheading + 25%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": [
+        "Description"
+      ]
+    },
+    {
+      "htsCode": "9903.94.07",
+      "changeType": "내용 변경",
+      "descriptionEn": "Except as provided for in headings 9903.94.33, 9903.94.44, 9903.94.45, 9903.94.54, 9903.94.55, 9903.94.64, and 9903.94.65, automobile parts as provided for in subdivision (p) of U.S. note 33 to this subchapter.",
+      "generalRateBefore": "The duty provided in the applicable subheading + 25%",
+      "generalRateAfter": "The duty provided in the applicable subheading + 25%",
+      "specialRateBefore": "The duty provided in the applicable subheading + 25%",
+      "specialRateAfter": "The duty provided in the applicable subheading + 25%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": [
+        "Description"
+      ]
+    },
+    {
+      "htsCode": "9903.94.60",
+      "changeType": "추가",
+      "descriptionEn": "Passenger vehicles and light trucks that are products of South Korea as specified in subdivision (s) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special equal to or greater than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "The duty provided in the applicable subheading",
+      "specialRateBefore": "",
+      "specialRateAfter": "The duty provided in the applicable subheading",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.61",
+      "changeType": "추가",
+      "descriptionEn": "Passenger vehicles and light trucks that are products of South Korea as specified in subdivision (s) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special less than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "15%",
+      "specialRateBefore": "",
+      "specialRateAfter": "15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.62",
+      "changeType": "추가",
+      "descriptionEn": "Parts of passenger vehicles and light trucks that are products of South Korea as specified in subdivisions (g) and (t) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special equal to or greater than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "The duty provided in the applicable subheading",
+      "specialRateBefore": "",
+      "specialRateAfter": "The duty provided in the applicable subheading",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.63",
+      "changeType": "추가",
+      "descriptionEn": "Parts of passenger vehicles and light trucks that are products of South Korea as specified in subdivisions (g) and (t) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special less than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "15%",
+      "specialRateBefore": "",
+      "specialRateAfter": "15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.64",
+      "changeType": "추가",
+      "descriptionEn": "Parts of passenger vehicles and light trucks that are products of South Korea as specified in subdivisions (r) and (t) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special equal to or greater than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "The duty provided in the applicable subheading",
+      "specialRateBefore": "",
+      "specialRateAfter": "The duty provided in the applicable subheading",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    },
+    {
+      "htsCode": "9903.94.65",
+      "changeType": "추가",
+      "descriptionEn": "Parts of passenger vehicles and light trucks that are products of South Korea as specified in subdivisions (r) and (t) of U.S. note 33 to this subchapter, with an ad valorem (or ad valorem equivalent as provided for in subdivision (m) of U.S. note 33 to this subchapter) rate of duty under column 1-General or column 1-Special less than 15 percent",
+      "generalRateBefore": "",
+      "generalRateAfter": "15%",
+      "specialRateBefore": "",
+      "specialRateAfter": "15%",
+      "additionalDutiesBefore": "",
+      "additionalDutiesAfter": "",
+      "changedFields": []
+    }
+  ]
+}
