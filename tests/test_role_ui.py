@@ -7,6 +7,47 @@ from streamlit.testing.v1 import AppTest
 
 
 APP_FILE = Path(__file__).resolve().parents[1] / "streamlit_app.py"
+SAMPLE_CSV = Path(__file__).resolve().parents[1] / "public" / "선적자료_예제.csv"
+
+
+def sample_shipment() -> dict:
+    """예제 CSV를 읽어 테스트용 신고서 한 건을 만든다."""
+    import csv as _csv
+
+    with SAMPLE_CSV.open(encoding="utf-8-sig", newline="") as source:
+        rows = list(_csv.DictReader(source))
+    first = rows[0]
+    return {
+        "entryNumber": first["entryNumber"],
+        "shipmentTitle": first["shipmentTitle"],
+        "importerOfRecord": first.get("importerOfRecord", ""),
+        "brokerFiler": first.get("brokerFiler", ""),
+        "carrier": first.get("carrier", ""),
+        "portOfEntry": first.get("portOfEntry", ""),
+        "exportDate": first.get("exportDate", ""),
+        "importDate": first.get("importDate", ""),
+        "status": "검토 필요",
+        "riskLevel": "미분석",
+        "items": [
+            {
+                "itemNumber": row["itemNumber"],
+                "partNameKo": row.get("partNameKo", ""),
+                "partNameEn": row["partNameEn"],
+                "declaredHtsCode": row["declaredHtsCode"],
+                "recommendedHtsCode": row["declaredHtsCode"],
+                "confidenceScore": 0,
+                "declaredValueUsd": float(row["declaredValueUsd"]),
+                "quantity": float(row["quantity"]),
+                "dutyRateDeclared": float(row["dutyRateDeclared"]),
+                "dutyRateCalculated": float(row["dutyRateDeclared"]),
+                "dutyDifferenceUsd": 0,
+                "riskLevel": "미분석",
+                "pscRequired": False,
+                "ruleCitation": "분석 실행 필요",
+            }
+            for row in rows
+        ],
+    }
 
 
 class RoleUiTests(unittest.TestCase):
@@ -18,12 +59,10 @@ class RoleUiTests(unittest.TestCase):
         )
         app.button[button_index].click().run()
         self.assertFalse(app.exception)
-        # 앱은 빈 상태로 시작한다. 화면 검증을 위해 시연용 예시를 먼저 불러온다.
-        app.radio(key="page_navigation").set_value("통관 신고서").run()
-        for button in app.button:
-            if button.label == "시연용 예시 신고서 불러오기":
-                button.click().run()
-                break
+        # 앱은 빈 상태로 시작한다. 화면 검증을 위해 예제 CSV를 세션에 직접 넣는다.
+        app.session_state["shipments"] = [sample_shipment()]
+        app.session_state["selected_entry"] = sample_shipment()["entryNumber"]
+        app.run()
         self.assertFalse(app.exception)
         return app
 

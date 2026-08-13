@@ -318,64 +318,6 @@ def load_official_hts_index() -> dict[str, dict[str, Any]]:
         return {}
 
 
-DEMO_SHIPMENTS = [
-    {
-        "entryNumber": "DEMO-ENTRY-001",
-        "shipmentTitle": "KD 1차 조립용 차체 부품군",
-        "importerOfRecord": "Demo Importer America Inc.",
-        "brokerFiler": "Demo Customs Filer LLC",
-        "carrier": "HMM",
-        "portOfEntry": "Savannah, GA (1703)",
-        "exportDate": "2026-07-20",
-        "importDate": "2026-08-08",
-        "status": "검토 필요",
-        "riskLevel": "높음",
-        "items": [
-            {"itemNumber":"LINE-001","partNameKo":"전방 펜더 프레스 성형품","partNameEn":"Front Fender Press Stamped Sheet Assembly","declaredHtsCode":"8708.29.5060","recommendedHtsCode":"8708.29.5060","confidenceScore":98,"declaredValueUsd":420000,"quantity":3500,"dutyRateDeclared":2.5,"dutyRateCalculated":2.5,"dutyDifferenceUsd":0,"riskLevel":"낮음","pscRequired":False,"ruleCitation":"CBP Ruling HQ 965412"},
-            {"itemNumber":"LINE-002","partNameKo":"EV 배터리 트레이 구조 프레임","partNameEn":"EV Battery Tray Structural Reinforced Frame","declaredHtsCode":"7616.99.5190","recommendedHtsCode":"8708.29.5060","confidenceScore":89,"declaredValueUsd":580000,"quantity":1200,"dutyRateDeclared":2.5,"dutyRateCalculated":27.5,"dutyDifferenceUsd":145000,"riskLevel":"매우 높음","pscRequired":True,"ruleCitation":"Federal Register 2025-21940 / CBP Ruling NY N310245"},
-            {"itemNumber":"LINE-003","partNameKo":"후방 액슬 크로스멤버","partNameEn":"Rear Axle Crossmember Sub-Assembly","declaredHtsCode":"8708.80.6590","recommendedHtsCode":"8708.80.6590","confidenceScore":95,"declaredValueUsd":150000,"quantity":800,"dutyRateDeclared":2.5,"dutyRateCalculated":2.5,"dutyDifferenceUsd":0,"riskLevel":"낮음","pscRequired":False,"ruleCitation":"USITC Chapter 87 Note 3"},
-            {"itemNumber":"LINE-004","partNameKo":"KD 고정용 철강 브래킷","partNameEn":"Iron Stamped Fastener Bracket Kit","declaredHtsCode":"7326.90.8688","recommendedHtsCode":"8708.29.5060","confidenceScore":78,"declaredValueUsd":100000,"quantity":5000,"dutyRateDeclared":2.9,"dutyRateCalculated":27.5,"dutyDifferenceUsd":24600,"riskLevel":"높음","pscRequired":True,"ruleCitation":"CBP Ruling HQ H301192"},
-        ],
-    },
-    {
-        "entryNumber": "DEMO-ENTRY-002",
-        "shipmentTitle": "엔진·파워트레인 KD 컨테이너 2차분",
-        "importerOfRecord": "Demo Importer America Inc.",
-        "brokerFiler": "Demo Customs Filer LLC",
-        "carrier": "Maersk Line",
-        "portOfEntry": "Mobile, AL (1901)",
-        "exportDate": "2026-07-15",
-        "importDate": "2026-08-01",
-        "status": "승인",
-        "riskLevel": "낮음",
-        "items": [
-            {"itemNumber":"LINE-001","partNameKo":"2.5L 가솔린 엔진 조립체","partNameEn":"2.5L Gasoline Engine Assembly","declaredHtsCode":"8407.34.5000","recommendedHtsCode":"8407.34.5000","confidenceScore":99,"declaredValueUsd":650000,"quantity":260,"dutyRateDeclared":2.5,"dutyRateCalculated":2.5,"dutyDifferenceUsd":0,"riskLevel":"낮음","pscRequired":False,"ruleCitation":"HTS Chapter 84 Note 2"},
-            {"itemNumber":"LINE-002","partNameKo":"8단 자동변속기 모듈","partNameEn":"8-Speed Automatic Transmission Module","declaredHtsCode":"8708.40.1100","recommendedHtsCode":"8708.40.1100","confidenceScore":96,"declaredValueUsd":240000,"quantity":260,"dutyRateDeclared":2.5,"dutyRateCalculated":2.5,"dutyDifferenceUsd":0,"riskLevel":"낮음","pscRequired":False,"ruleCitation":"CBP Ruling NY K82310"},
-        ],
-    },
-    {
-        "entryNumber": "DEMO-ENTRY-003",
-        "shipmentTitle": "전기차 전장·조명 수시 선적분",
-        "importerOfRecord": "Demo Importer America Inc.",
-        "brokerFiler": "Demo Customs Filer LLC",
-        "carrier": "ONE",
-        "portOfEntry": "Los Angeles, CA (2704)",
-        "exportDate": "2026-08-01",
-        "importDate": "2026-08-12",
-        "status": "분석 중",
-        "riskLevel": "보통",
-        "items": [
-            {"itemNumber":"LINE-001","partNameKo":"고전압 와이어링 하네스","partNameEn":"High Voltage Wiring Harness","declaredHtsCode":"8544.30.0000","recommendedHtsCode":"8544.30.0000","confidenceScore":94,"declaredValueUsd":320000,"quantity":1500,"dutyRateDeclared":5.0,"dutyRateCalculated":5.0,"dutyDifferenceUsd":0,"riskLevel":"낮음","pscRequired":False,"ruleCitation":"CBP Ruling NY G81203"},
-            {"itemNumber":"LINE-002","partNameKo":"전방 LED 헤드램프 모듈","partNameEn":"Front Matrix LED Headlamp","declaredHtsCode":"8512.20.2040","recommendedHtsCode":"8512.20.2040","confidenceScore":91,"declaredValueUsd":350000,"quantity":2000,"dutyRateDeclared":0.0,"dutyRateCalculated":25.0,"dutyDifferenceUsd":87500,"riskLevel":"보통","pscRequired":True,"ruleCitation":"Section 301 적용 여부 확인 필요"},
-        ],
-    },
-]
-
-
-def load_demo_shipments() -> None:
-    """시연용 예시 신고서를 불러온다. 실제 사용 시에는 CSV 업로드가 정상 경로다."""
-    st.session_state.shipments = copy.deepcopy(DEMO_SHIPMENTS)
-    st.session_state.selected_entry = DEMO_SHIPMENTS[0]["entryNumber"]
 
 
 def initialize_state() -> None:
@@ -729,9 +671,6 @@ def page_shipments() -> None:
 
     if not st.session_state.shipments:
         st.info("아직 등록된 신고서가 없습니다. 위에서 CSV를 업로드하세요.")
-        if st.button("시연용 예시 신고서 불러오기"):
-            load_demo_shipments()
-            st.rerun()
         return
     options = [s["entryNumber"] for s in st.session_state.shipments]
     current_index = options.index(st.session_state.selected_entry) if st.session_state.selected_entry in options else 0
